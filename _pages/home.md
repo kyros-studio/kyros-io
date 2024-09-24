@@ -11,7 +11,7 @@ header:
     - label: "🚧 Demo Access"
       #url: "https://demo.kyros.studio"
     - label: "GitHub Repo"
-      url: "https://github.com/kyroslabs/kyros-project"
+      url: "https://github.com/kyros-studio/kyros"
     - label: "Documentation"
       url: "/docs/quick-start-guide/"
 excerpt: "Kyros is a cloud-agnostic, modular, and customizable data platform 🚧 currently under construction 🚧, designed for flexibility and affordability."
