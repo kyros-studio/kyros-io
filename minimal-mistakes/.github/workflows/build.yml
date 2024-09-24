@@ -33,20 +33,23 @@ jobs:
 
     - name: Install Bundler and Dependencies
       run: |
-        bundle config set path vendor/bundle
+        bundle config set path 'vendor/bundle'
         bundle install --jobs=4 --retry=3
         bundle clean
 
     # Build the Jekyll site
     - name: Build Jekyll site
-      run: bundle exec jekyll build
+      run: |
+        # Specify that the local theme is located in the minimal-mistakes folder
+        cp -r ./minimal-mistakes ./_site/minimal-mistakes
+        bundle exec jekyll build --config _config.yml
 
     # Deploy the site to GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _site
+        publish_dir: ./_site
 
     # Optional: Update Algolia index
     - name: Update Algolia index
