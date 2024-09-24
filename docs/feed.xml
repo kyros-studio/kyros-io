@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-24T22:11:34+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">🚧 Kyros - Open-Source Data Platform</title><subtitle>Kyros is a cloud-agnostic, modular, and customizable data platform offering affordable deployment and scalability.</subtitle><author><name>Kyros</name></author><entry><title type="html">Introducing Kyros: A New Era of Cloud-Agnostic Data Platforms</title><link href="http://localhost:4000/announcement/welcome-to-kyros/" rel="alternate" type="text/html" title="Introducing Kyros: A New Era of Cloud-Agnostic Data Platforms" /><published>2024-09-24T00:00:00+02:00</published><updated>2024-09-24T00:00:00+02:00</updated><id>http://localhost:4000/announcement/welcome-to-kyros</id><content type="html" xml:base="http://localhost:4000/announcement/welcome-to-kyros/"><![CDATA[<p>We are thrilled to announce the upcoming launch of <strong>Kyros</strong>, a cloud-agnostic, modular, and fully customizable data platform designed to offer an affordable and scalable alternative to traditional cloud solutions.</p>
+
+<h3 id="what-is-kyros">What is Kyros?</h3>
+
+<p>Kyros is an open-source platform, Apache-licensed, built to empower data engineers and businesses to <strong>design, deploy, and manage</strong> their data platforms with flexibility and ease. Whether you are working with large-scale data processing or simply need a cost-effective solution for your business, Kyros is here to simplify your infrastructure needs.</p>
+
+<p><strong>Key Features:</strong></p>
+
+<ul>
+  <li><strong>Modular Architecture:</strong> Deploy only what you need, with integrations for tools like Apache Spark, dbt, and Apache Flink.</li>
+  <li><strong>Cost-Effective Hosting:</strong> Take advantage of affordable hosting services with predictable and transparent pricing.</li>
+  <li><strong>Open-Source:</strong> Completely open-source and licensed under Apache 2.0, Kyros supports modern data storage formats such as Delta Lake, Apache Iceberg, and Apache Pinot.</li>
+  <li><strong>Cloud-Agnostic:</strong> Avoid vendor lock-in and enjoy the flexibility to run Kyros on any infrastructure.</li>
+  <li><strong>Seamless Integration:</strong> Built to easily integrate with your existing tools and workflows, reducing operational complexity.</li>
+</ul>
+
+<h3 id="why-kyros">Why Kyros?</h3>
+
+<p>The complexity, limitations, and costs of proprietary platforms like Databricks inspired the development of Kyros. We aim to simplify data infrastructure, reduce costs, and offer a scalable solution that evolves with your needs — all while remaining <strong>vendor-independent</strong>.</p>
+
+<p>With <strong>Kyros</strong>, you get <strong>predictable pricing</strong>, <strong>modular deployments</strong>, and an <strong>easy-to-manage</strong> platform. Perfect for teams with fluctuating workloads or those looking for an alternative to the overly complicated and costly options out there.</p>
+
+<p>Stay tuned as we get closer to the official launch of Kyros! In the meantime, <a href="https://github.com/kyros-studio/kyros">follow us on GitHub</a> for updates, and be part of the future of cloud-agnostic data platforms.</p>
+
+<hr />
+
+<p>Follow our journey as we prepare to redefine the way data platforms are designed, deployed, and managed. More exciting updates are on the way, so be sure to subscribe for the latest news!</p>]]></content><author><name>Kyros</name></author><category term="announcement" /><category term="kyros" /><category term="cloud-agnostic" /><category term="data-platform" /><category term="open-source" /><summary type="html"><![CDATA[We are thrilled to announce the upcoming launch of Kyros, a cloud-agnostic, modular, and fully customizable data platform designed to offer an affordable and scalable alternative to traditional cloud solutions.]]></summary></entry></feed>

@@ -7,6 +7,7 @@
 
 #remote_theme             : "mmistakes/minimal-mistakes@master"
 theme                     : "minimal-mistakes-jekyll"
+destination: docs
 
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
