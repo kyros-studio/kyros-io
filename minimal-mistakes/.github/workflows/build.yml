@@ -25,14 +25,13 @@ jobs:
       uses: actions/cache@v4
       with:
         path: |
-          docs/Gemfile.lock
-          docs/vendor/bundle
-        key: ${{ runner.os }}-bundler-${{ hashFiles('docs/Gemfile') }}
+          Gemfile.lock
+          vendor/bundle
+        key: ${{ runner.os }}-bundler-${{ hashFiles('Gemfile') }}
         restore-keys: |
           ${{ runner.os }}-bundler-
 
     - name: Install Bundler and Dependencies
-      working-directory: docs/
       run: |
         bundle config set path vendor/bundle
         bundle install --jobs=4 --retry=3
@@ -40,7 +39,6 @@ jobs:
 
     # Build the Jekyll site
     - name: Build Jekyll site
-      working-directory: docs/
       run: bundle exec jekyll build
 
     # Deploy the site to GitHub Pages
@@ -48,11 +46,10 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs/_site
+        publish_dir: _site
 
-    # Update Algolia index (optional, depending on whether you want to do it for each build)
+    # Optional: Update Algolia index
     - name: Update Algolia index
-      working-directory: docs/
       run: bundle exec jekyll algolia push
       env:
         ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
