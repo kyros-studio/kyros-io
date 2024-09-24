@@ -5,7 +5,6 @@ on:
     branches:
       - master
   workflow_dispatch: {}
-  repository_dispatch: {}
 
 jobs:
   build:
@@ -16,43 +15,31 @@ jobs:
       with:
         fetch-depth: 0
 
+    - name: Add safe directory
+      run: git config --global --add safe.directory /github/workspace
+
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.2'
 
-    - name: Setup cache for Bundler
-      id: cache
-      uses: actions/cache@v4
-      with:
-        path: |
-          Gemfile.lock
-          vendor/bundle
-        key: ${{ runner.os }}-bundler-${{ hashFiles('Gemfile') }}
-        restore-keys: |
-          ${{ runner.os }}-bundler-
+    - name: Setup Bundler
+      run: gem install bundler
 
-    - name: Install Bundler and Dependencies
-      run: |
-        bundle config set path 'vendor/bundle'
-        bundle install --jobs=4 --retry=3
-        bundle clean
+    - name: Install dependencies
+      run: bundle install --jobs=4 --retry=3
+      working-directory: .
 
-    # Build the Jekyll site
-    - name: Build Jekyll site
-      run: |
-        # Specify that the local theme is located in the minimal-mistakes folder
-        cp -r ./minimal-mistakes ./_site/minimal-mistakes
-        bundle exec jekyll build --config _config.yml
+    - name: Build the Jekyll site
+      run: bundle exec jekyll build
+      working-directory: .
 
-    # Deploy the site to GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_site
 
-    # Optional: Update Algolia index
-    - name: Update Algolia index
+    - name: Update Algolia index (optional)
       run: bundle exec jekyll algolia push
       env:
         ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
