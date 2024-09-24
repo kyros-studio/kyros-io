@@ -2,16 +2,6 @@
 permalink: /about/
 title: "About"
 excerpt: "Kyros is an open-source, cloud-agnostic data platform for modular and affordable infrastructure."
-layouts_gallery:
-  - url: /assets/images/mm-layout-splash.png
-    image_path: /assets/images/mm-layout-splash.png
-    alt: "splash layout example"
-  - url: /assets/images/mm-layout-single-meta.png
-    image_path: /assets/images/mm-layout-single-meta.png
-    alt: "single layout with comments and related posts"
-  - url: /assets/images/mm-layout-archive.png
-    image_path: /assets/images/mm-layout-archive.png
-    alt: "archive layout example"
 last_modified_at: 2024-09-24T11:59:26-04:00
 toc: true
 ---
@@ -19,8 +9,6 @@ toc: true
 🚧 **Kyros** is an open-source data platform focused on providing cloud-agnostic, modular solutions for data engineering and infrastructure management. Our mission is to offer a customizable, scalable, and affordable alternative to proprietary platforms like Databricks, without vendor lock-in. 
 
 Kyros is designed to leverage affordable hosting options and allows users to deploy only the components they need, keeping both complexity and costs low. Whether you're running small-scale operations or managing large, complex data environments, Kyros adapts to your needs.
-
-{% include gallery id="layouts_gallery" caption="Examples of Kyros's flexible layouts and configurations." %}
 
 [Get Started with Kyros]({{ "/docs/quick-start-guide/" | relative_url }}){: .btn .btn--success .btn--large}
 
@@ -63,6 +51,7 @@ For even more examples and case studies, check the [projects archive][projects-a
 - [Delta Lake](https://delta.io)
 - [Apache Iceberg](https://iceberg.apache.org)
 - [Portainer](https://www.portainer.io)
+
 ---
 
 **Kyros** is designed, developed, and maintained by Kyros, with a focus on simplifying cloud infrastructure and making data engineering accessible and affordable.
