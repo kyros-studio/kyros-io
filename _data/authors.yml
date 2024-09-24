@@ -1,0 +1,16 @@
+# Authors
+
+Benjamin:
+  name        : "Benjamin"
+  bio         : "Passionate about building cloud-agnostic, scalable, and affordable data platforms."
+  avatar      : "/assets/images/benjamin.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:https://www.linkedin.com/in/benjaminberhault/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kyros-studio"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/your-linkedin-username"
